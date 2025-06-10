@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #ffffff; }
+      50% { box-shadow: 0 0 20px #ffffff; }
+      100% { box-shadow: 0 0 5px #ffffff; }
+    }
+
+    @keyframes blinkCaret {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: white; }
+    }
+
+    .glow-effect {
+      animation: glow 1.5s infinite ease-in-out;
+    }
+
+    .typing-text {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #00ffea;
+      background: linear-gradient(270deg, #00ffea, #ff00ff, #ffea00, #00ffea);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: blinkCaret 0.75s step-end infinite;
+      font-weight: bold;
+      font-size: 2.5rem;
+      text-shadow:
+        0 0 5px #00ffea,
+        0 0 10px #00ffea,
+        0 0 20px #00ffea,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+    }
+@media screen and (max-width: 475px) {
+  .social-icons {
+    position: fixed;
+right: 0;
+left: 0;
+;
+    background-color: blue;
+bottom: 0;
+  }
+ 
+}
+  </style>
+</head>
+
+<body class="flex flex-col md:flex-row min-h-screen overflow-x-hidden bg-yellow-100">
+
+
+  <div class="md:fixed md:h-screen md:w-64 w-full bg-gray-900 p-6 flex flex-col items-center text-center z-10">
+    <img src="./profile.jpg" alt="Profile" class="w-32 h-32 rounded-full border-4 border-white">
+    <h1 class="text-xl font-bold mt-4 bg-blue-500 px-4 py-2 rounded text-white">JASON LUYAS</h1>
+      <nav class="mt-6 w-full">
+        <ul class="space-y-4">
+           
+            <a href="myhomepage.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer text-white">🏠 HOME</a>
+            <a href="aboutme.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer text-white">📄 ABOUT ME</a>
+            <a href="./RESUME.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer text-white">📂 RESUME</a>
+            <a href="contact.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer text-white">📧 CONTACT</a>
+            
+        </ul>
+    </nav>
+    <div class="mt-auto flex space-x-4">
+        <div class="social-icons space-x-4">
+            <a href="#" class="social-icon text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            <i class="fab fa-github text-white"></i>
+<p class="text-xs mt-4 text-white text-center"id="alls">© 2025. All Rights Reserved.</p>
+          </div>
+    </div>
+    
+</div>
+
+  <!-- Main Content -->
+ <main class="flex-1 md:ml-64 bg-yellow-400 overflow-x-hidden">
+
+
+    <!-- Hero Section -->
+    <section class="w-full min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('./baclfround.jpg');">
+      <div class="text-center bg-black bg-opacity-60 p-6 rounded-lg shadow-lg max-w-[100%] mx-auto">
+        <span class="typing-text"></span>
+        <pre class="text-green-400 text-xs font-mono mt-4">
+{`function code() {
+  console.log("WAG MO ISIPIN NA BOBO KA DAHIL ALAM NA NG MGA TAO YAN!!!");
+}`}
+
+        </pre>
+        <div class=" p-2 flex flex-wrap  gap-1 rounded-lg ">
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[70px] glow-effect">TAB</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">Q</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">W</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">E</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">R</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">T</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">Y</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">U</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">I</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">O</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">P</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">[</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">]</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">\</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[70px] glow-effect">PGUP</div> 
+</div>
+
+<div class=" p-2 flex flex-wrap  gap-1 rounded-lg  mt-2">
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[90px] glow-effect">CAPSLOCK</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">A</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">S</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">D</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">F</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">G</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">H</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">J</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">K</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">L</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">;</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">'</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[90px] glow-effect">ENTER</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">\</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[70px] glow-effect">PGDN</div> 
+</div>
+
+<div class=" p-2 flex flex-wrap  gap-1 rounded-lg  mt-2">
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[90px] glow-effect">SHIFT</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">Z</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">X</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">C</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">V</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">B</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">N</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">M</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">,</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">.</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">/</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[90px] glow-effect">SHIFT</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">⬆</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[70px] glow-effect">END</div> 
+</div>
+
+<div class=" p-2 flex flex-wrap  gap-1 rounded-lg  mt-2">
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[70px] glow-effect">CTRL</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">🪟</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">ALT</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded w-[200px] glow-effect">SPACE</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">\</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">ALT GR</div>
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">FN</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">⬅</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">⬇</div> 
+  <div class="bg-gray-700 text-white text-sm px-3 py-1 rounded glow-effect">➡</div> 
+</div>
+
+      </div>
+    </section>
+
+<header class="bg-white py-4 text-center rotate-1 shadow-md">
+      <h1 class="text-3xl font-bold">ABOUT ME</h1>
+    </header>
+
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-0 mt-6 max-w-4xl mx-auto rounded overflow-hidden">
+  
+      <div class="bg-purple-300 p-8">
+        <h2 class="text-2xl font-bold mb-4">Hi Im Jason</h2>
+        <p class="text-sm mb-4">
+          I'm a porgrammer with a passion for creating functional web applications.
+        </p>
+        <a href="#about" 
+           class="inline-block bg-black text-white px-4 py-2 text-sm rounded shadow-md transition 
+                  hover:bg-white hover:text-black hover:border hover:border-black 
+                  focus:outline-none focus:ring-2 focus:ring-black 
+                  active:scale-95">
+           Learn more
+        </a>
+      </div>
+
+      <div class="bg-yellow-300 flex items-center justify-center p-4">
+        <div class="relative bg-purple-400 rounded-full p-2">
+          <img
+            src="./profile.jpg"
+            alt="John's Photo"
+            class="rounded-full w-32 h-32 object-cover border-4 border-white"
+          />
+          <div class="absolute bottom-0 right-0 bg-white rounded-full p-2 text-xl">
+          👨‍💻
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="bg-black text-white text-center py-2 font-bold mt-6">
+     
+    </div>
+
+
+     <section id="about" class="mt-20 p-8 bg-white rounded max-w-4xl mx-auto mb-10">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700">
+        
+      </p>
+    </section>
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="bg-blue-700 pb-10">
+      <header class="bg-black py-4 text-center -rotate-1 mt-[]">
+      <h1 class="text-3xl font-bold text-white">RESUME</h1>
+    </header>
+
+
+   <div class="max-w-5xl mx-auto my-10 bg-white shadow-lg rounded-lg overflow-hidden h-[50vh]">
+
+  <!-- Flex Container -->
+  <div class="flex flex-col md:flex-row ">
+
+    <!-- Sidebar -->
+    <div class="md:w-1/3 bg-gray-900 text-white p-6 space-y-6">
+      <div class="flex flex-col items-center text-center">
+        <img src="/pictures/560eb189-3ae7-4ad0-89ad-92fbdba64151.jpg" alt="Profile" class="w-28 h-28 rounded-full border-4 border-white mb-4">
+        <h1 class="text-xl font-bold">Luyas Jason</h1>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h2 class="text-lg font-semibold border-l-4 border-yellow-400 pl-2 mb-2">Contact</h2>
+        <p class="text-sm"><strong>Phone:</strong> 09929983587</p>
+        <p class="text-sm"><strong>Email:</strong> jasonluyas549@gmail.com</p>
+        <p class="text-sm"><strong>Address:</strong><br>Blk 140 Lot 14 St Apolonia<br>Deca Homes Loma De Gato<br>Marilao Bulacan</p>
+      </div>
+
+      <!-- Skills -->
+      <div>
+        <h2 class="text-lg font-semibold border-l-4 border-yellow-400 pl-2 mb-2">Skills</h2>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>Web Design</li>
+          <li>Computer Literacy</li>
+          <li>Multitasking</li>
+          <li>Creativity</li>
+        </ul>
+      </div>
+
+      <!-- Language -->
+      <div>
+        <h2 class="text-lg font-semibold border-l-4 border-yellow-400 pl-2 mb-2">Language</h2>
+        <p class="text-sm">• Tagalog</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="md:w-2/3 p-8 space-y-10">
+      <!-- About Myself -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2"><span>👤</span> ABOUT MYSELF</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          I am a College Student. I want to be a part timer to help my studies to graduate and help my family with expenses.
+          I want to find more opportunities by gaining more experience in different types of work.
+          I have developed a keen understanding of customer needs and the ability to effectively communicate product benefits.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2"><span>🎓</span> Education</h2>
+
+        <div class="space-y-4 text-sm text-gray-800">
+          <div>
+            <p class="font-bold">2022</p>
+            <p class="font-semibold">Prenza National High School</p>
+            <p>TVL - ICT</p>
+          </div>
+
+          <div>
+            <p>• While my formal education extends to high school. I know some minor computer knowledge.</p>
+          </div>
+
+          <div>
+            <p class="font-bold">2023–2024</p>
+            <p class="font-semibold">Beslink College of the Philippines</p>
+            <p>• I was continue my study about Information Technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </section>
+</section>
+    <!-- Contact -->
+    <section id="contact" class="bg-orange-700 h-[70vh]">
+     <header class="bg-green-700 py-4 text-center rotate-1 shadow-md mt-10">
+      <h1 class="text-3xl font-bold text-violet-300">CONTACT</h1>
+    </header>
+
+
+     <div class="w-full max-w-5xl mx-auto my-10 bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="px-4 py-8 md:px-8 md:py-12">
+      
+      <!-- Info Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 text-center gap-6 mb-8"id="cnt">
+        <!-- Address -->
+        <div>
+          <div class="text-2xl mb-2">📍</div>
+          <h3 class="text-lg font-semibold">Address</h3>
+          <p class="text-sm text-gray-600">
+            Marilao Bulacan<br>
+            Deca Homes Loma De Gato Blk 140 Lot 14<br>
+            Province/3019
+          </p>
+        </div>
+
+        <!-- Number -->
+        <div>
+          <div class="text-2xl mb-2">📞</div>
+          <h3 class="text-lg font-semibold">Number</h3>
+          <p class="text-sm text-gray-600">09303600746<br>09929983587</p>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <div class="text-2xl mb-2">📧</div>
+          <h3 class="text-lg font-semibold">Email</h3>
+          <p class="text-sm text-gray-600">jasonluyas549@gmail.com<br>jasonluyas36@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Contact Me Heading -->
+      <div class="text-center border-y-2 border-gray-200 py-6 mb-1">
+        <h2 class="text-3xl font-bold text-green-900">CONTACT ME</h2>
+      
+
+      <!-- Description -->
+      <p class="mt-4 text-center text-sm text-gray-600 max-w-2xl mx-auto">
+        I am just a beginner in making websites. If you want to get one made, please contact me. Thank you.
+      </p>
+    </div>
+    </div>
+  </div>
+
+    </section>
+
+  </main>
+ <script>
+    const text = "PROGRAMMER";
+  const typingTextElem = document.querySelector('.typing-text');
+  let index = 0;
+  let isDeleting = false;
+  const typingSpeed = 150;  
+  const deletingSpeed = 75; 
+  const pauseBetween = 500; 
+
+  function typeLoop() {
+    if (!isDeleting) {
+      // typing forward
+      typingTextElem.textContent = text.slice(0, index + 1);
+      index++;
+
+      if (index === text.length) {
+
+        isDeleting = true;
+        setTimeout(typeLoop, pauseBetween);
+        return;
+      }
+      setTimeout(typeLoop, typingSpeed);
+    } else {
+
+      typingTextElem.textContent = text.slice(0, index - 1);
+      index--;
+
+      if (index === 0) {
+
+        isDeleting = false;
+        setTimeout(typeLoop, typingSpeed);
+        return;
+      }
+      setTimeout(typeLoop, deletingSpeed);
+    }
+  }
+
+  typeLoop();
+</script>
+
+</body>
+</html>

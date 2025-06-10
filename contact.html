@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me - Jason Luyas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+ <style>
+  @media screen and (max-width: 475px) {
+  .social-icons {
+    position: fixed;
+right: 0;
+left: 0;
+;
+    background-color: blue;
+bottom: 0;
+  }
+ 
+}
+ </style>
+</head>
+<body class="bg-gray-800 text-white ">
+
+  <!-- Sidebar -->
+   <div class="md:fixed md:h-screen md:w-64 w-full bg-gray-900 p-6 flex flex-col items-center text-center z-10">
+    <img src="./profile.jpg" alt="Profile" class="w-32 h-32 rounded-full border-4 border-white ">
+    <h1 class="text-xl font-bold mt-4 bg-blue-500 px-4 py-2 rounded text-white">JASON LUYAS</h1>
+    <nav class="mt-6 w-full">
+        <ul class="space-y-4">
+           
+            <a href="myhomepage.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer">🏠 HOME</a>
+            <a href="aboutme.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer">📄 ABOUT ME</a>
+            <a href="./RESUME.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer">📂 RESUME</a>
+            <a href="contact.html"class="flex items-center space-x-3 p-3 hover:bg-gray-700 cursor-pointer">📧 CONTACT</a>
+            
+        </ul>
+    </nav>
+    <div class="mt-auto flex space-x-4">
+        <div class="social-icons space-x-4 text-white">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+             <i class="fab fa-github text-white"></i>
+             <p class="text-xs mt-4">© 2025. All Rights Reserved.</p>
+          </div>
+    </div>
+    
+</div>
+ <main class="md:ml-64 p-4 sm:p-8 max-w-6xl mx-auto">
+  
+      <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-900 rounded-full border-4 border-teal-400 flex items-center justify-center text-xl md:text-2xl font-bold mt-10">
+        JL
+      </div>
+
+
+    <!-- Page Title -->
+    <div class="text-center mt-8">
+      <h1 class="text-3xl md:text-5xl font-bold text-gray-100">
+        CONTACT <span class="text-white">ME</span><span class="text-teal-500">|</span>
+      </h1>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="mt-6 text-sm md:text-base text-gray-300 space-y-2 text-center md:text-left px-2 md:px-4">
+      <p><strong>📍 Address:</strong> MARILAO BULACAN DECA HOMES LOMA DE GATO</p>
+      <p><strong>📞 Telephone nr.:</strong> 09303600746</p>
+      <p>
+        <strong>📧 E-Mail:</strong>
+        <a href="mailto:jasonluyas549@gmail.com" class="text-red-400 underline">
+          jasonluyas549@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 px-2 md:px-4" action="#" method="POST">
+      <input
+        type="text"
+        placeholder="Your Name*"
+        required
+        class="p-2 bg-yellow-100 text-black rounded outline-none"
+      />
+      <input
+        type="email"
+        placeholder="Your e-mail address*"
+        required
+        class="p-2 bg-yellow-100 text-black rounded outline-none"
+      />
+      <input
+        type="text"
+        placeholder="Subject"
+        class="p-2 bg-yellow-100 text-black rounded outline-none md:col-span-2"
+      />
+      <textarea
+        placeholder="Type your message here..."
+        required
+        class="p-2 bg-yellow-100 text-black rounded outline-none md:col-span-2 h-32"
+      ></textarea>
+      <div class="col-span-1 md:col-span-2 text-center">
+        <button
+          type="submit"
+          class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded mt-2"
+        >
+          SEND!
+        </button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
